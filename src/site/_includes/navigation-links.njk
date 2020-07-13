@@ -1,10 +1,19 @@
-
-<ul class="flex items-row">
-  {% for link in linkList %}
-    <li class="pr-1">
-      <a href="{{ link.url }}" class="nav-tab">
-        {{ link.text }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+<nav>
+  <div class="flex justify-center">
+    <div class="w-fw
+                    mobile:px-10 desktop:px-0 px-4 pt-10 pb-6
+                    flex flex-col
+                    sm:flex-row">
+      <a href="/">
+        <img class="mb-4 w-24 mw-24 sm:w-20 sm:mr-16" alt="Logo" src="images/logo.png"></img>
+      </Link>
+      <div class="flex flex-wrap">
+        {% for link in linkList %}
+          <a href={{ link.url }}>
+            <p class="text-left m-0 text-smaller mr-4 sm:mr-8 font-semibold">{{ link.text }}</p>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</nav>
