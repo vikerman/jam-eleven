@@ -28,6 +28,9 @@ module.exports = function (eleventyConfig) {
   // Titlify navigation categories
   eleventyConfig.addFilter("titlify", require("./src/utils/titlify.js"));
 
+  // Return base 64 data URL for files
+  eleventyConfig.addFilter("dataurl", require("./src/utils/data-url.js"));
+
   // minify the html output when running in prod
   if (process.env.NODE_ENV == "production") {
     eleventyConfig.addTransform(
