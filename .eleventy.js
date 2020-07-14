@@ -25,8 +25,8 @@ module.exports = function (eleventyConfig) {
   // Grab excerpts and sections from a file
   eleventyConfig.addFilter("section", require("./src/utils/section.js"));
 
-  // compress and combine js files
-  eleventyConfig.addFilter("jsmin", require("./src/utils/minify-js.js"));
+  // Titlify navigation categories
+  eleventyConfig.addFilter("titlify", require("./src/utils/titlify.js"));
 
   // minify the html output when running in prod
   if (process.env.NODE_ENV == "production") {
