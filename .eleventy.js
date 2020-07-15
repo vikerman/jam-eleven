@@ -28,6 +28,9 @@ module.exports = function (eleventyConfig) {
   // Titlify navigation categories
   eleventyConfig.addFilter("titlify", require("./src/utils/titlify.js"));
 
+  // Trim a string
+  eleventyConfig.addFilter("getTrimmed", require("./src/utils/get-trimmed.js"));
+
   // Return base 64 data URL for files
   eleventyConfig.addFilter("dataurl", require("./src/utils/data-url.js"));
 

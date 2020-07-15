@@ -12,7 +12,7 @@
           <p class="text-left m-0 text-smaller mr-4 sm:mr-8 font-semibold">Home</p>
         </a>
         {% for category in categories %}
-          <a href={{ category | slug }}>
+          <a href="/{{ category | slug }}">
             <p class="text-left m-0 text-smaller mr-4 sm:mr-8 font-semibold">{{ category | titlify }}</p>
           </a>
         {% endfor %}

@@ -32,3 +32,19 @@ layout: default
     </div>
   </div>
 </div>
+{% from "components/display.njk" import medium,
+small %}
+<div class="my-4 lg:my-8 flex flex-col lg:flex-row justify-between">
+  {{ medium("/images/products/couch1.png", "4 items", "new arrivals") }}
+  {{ medium("/images/products/couch5.png", "10 items", "sofas") }}
+</div>
+<div class="pt-10 pb-6 flex flex-col items-center">
+  <h2 class="text-4xl mb-3">Trending Now</h2>
+  <p class="text-gray-600 text-sm">Find the perfect piece or accessory to finish off your favorite room in the house.</p>
+</div>
+<div class="my-8 flex flex-col lg:flex-row justify-between">
+  {{ small("/images/products/couch1.png", "new arrivals", "Timber Gray Sofa") }}
+  {{ small("/images/products/couch5.png", "sofas", "Carmel Brown Sofa") }}
+  {{ small("/images/products/couch6.png", "new arrivals", "Mod Leather Sofa") }}
+  {{ small("/images/products/couch7.png", "new arrivals", "Thetis Gray Love Seat") }}
+</div>

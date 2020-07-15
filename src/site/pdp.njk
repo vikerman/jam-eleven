@@ -1,0 +1,53 @@
+---
+layout: default
+pagination:
+    data: inventory
+    size: 1
+    alias: product
+permalink: "/products/{{ product.name | slug }}/"
+---
+<div class="py-12 flex flex-1 flex-col
+      md:flex-row
+      w-full
+      my-0 mx-auto">
+    <div class="w-full md:w-1/2 h-112 flex flex-1 bg-light hover:bg-light-200">
+        <div class="py-16 p10 flex flex-1 justify-center items-center">
+            <!-- TODO: Show pop up on click on client side -->
+            <img src="{{ product.image }}" alt="Inventory item"></img>
+        </div>
+    </div>
+    <div class="pt-2 px-0 md:px-10 pb-8 w-full md:w-1/2">
+        <h1 class="text-5xl font-light">{{ product.name }}</h1>
+        <h2 class="text-2xl tracking-tighter">${{ product.price }}</h2>
+        <p class="text-gray-600 text-sm">{{ product.description }}</p>
+        <div class="mb-6">
+            <div class="flex items-center">
+                <div class="px-2 text-xs">QUANTITY</div>
+                <button
+        class="
+        w-10 h-10 text-xl
+        md:w-8 md:h-8 md:text-sm 
+        cursor-pointer text-center border pb-.5
+        hover:bg-gray-900 hover:text-white
+        focus:outline-none
+        "
+      >+</button>
+                <p class="
+        w-10 h-10 pt-2 text-base
+        md:w-8 md:h-8 md:pt-1 md:text-xs
+        m-0 border-t border-b text-center">0</p>
+                <button
+        class="
+        w-10 h-10 text-2xl
+        md:w-8 md:h-8 md:text-sm
+        cursor-pointer text-center border pb-.5
+        hover:bg-gray-900 hover:text-white
+        focus:outline-none
+        ">-</button>
+            </div>
+        </div>
+        <button class= "text-sm font-bold tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-4 px-12 border-2 border-black hover:border-transparent w-full">
+            Add to Cart
+        </button>
+    </div>
+</div>
