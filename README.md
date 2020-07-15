@@ -1,4 +1,4 @@
-## A port of https://github.com/jamstack-cms/jamstack-ecommerce on top of philhawksworth/eleventail
+## A port of https://github.com/jamstack-cms/jamstack-ecommerce on top of https://github.com/philhawksworth/eleventail
 
 # ElevenTail
 
