@@ -1,3 +1,5 @@
+## A port of https://github.com/jamstack-cms/jamstack-ecommerce on top of philhawksworth/eleventail
+
 # ElevenTail
 
 A project scaffold for quickly starting a site build with:
@@ -7,9 +9,6 @@ A project scaffold for quickly starting a site build with:
 - [PurgeCSS](https://www.purgecss.com/) for optimizing CSS output
 - [UglifyJS](https://www.npmjs.com/package/uglify-js) for a simple JS build pipeline
 - [Netlify CLI](https://www.npmjs.com/package/netlify-cli) for Netlify dev pipeline and local replication of prod environment
-
-
-![Deploy to Netlify](eleventail-screenshot.jpg)
 
 
 ## Example
