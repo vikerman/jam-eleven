@@ -15,7 +15,10 @@ layout: default
       <div>
         <p class="text-4xl xl:text-5xl font-bold tracking-widest leading-none">Mod Leather Sofa</p>
         <p>FROM <span>$200</span></p>
-        <button class="text-sm font-bold tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-4 px-12 border-2 border-black hover:border-transparent">Shop Now</button>
+        {% from "components/button.njk" import actionButton %}
+        <form method="get" action="/products/{{ 'Mod Leather Sofa' | slug }}">
+          {{ actionButton("Shop Now", true) }}
+        </form>
       </div>
       <div class="flex flex-1 flex-col justify-end pb-10 mt-4 lg:mt-0">
         <p class="font-light text-gray-600 text-xxs font-semibold tracking-tight m-0 leading-tight mb-2">Design by</p>

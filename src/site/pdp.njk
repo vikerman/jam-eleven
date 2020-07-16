@@ -46,8 +46,7 @@ permalink: "/products/{{ product.name | slug }}/"
         ">-</button>
             </div>
         </div>
-        <button class= "text-sm font-bold tracking-wider bg-transparent hover:bg-black text-black font-semibold hover:text-white py-4 px-12 border-2 border-black hover:border-transparent w-full">
-            Add to Cart
-        </button>
+        {% from "components/button.njk" import actionButton %}
+        {{ actionButton("Add to Cart", false) }}
     </div>
 </div>

@@ -1,0 +1,3 @@
+{% macro actionButton(text, isSubmit) %}
+    <button {% if isSubmit %} type="submit" {% endif %} class="text-sm font-bold tracking-wider bg-transparent focus:bg-black hover:bg-black text-black font-semibold focus:text-white hover:text-white py-4 px-12 border-2 border-black focus:border-transparent hover:border-transparent">{{ text | safe }}</button>
+{% endmacro %}
